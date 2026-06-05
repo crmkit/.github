@@ -14,13 +14,13 @@
 
 ---
 
-crmkit is an **agent-first CRM**, built for AI agents — ChatGPT, Claude, Cursor —
+crmkit is an **agent-first CRM**, built for AI agents - ChatGPT, Claude, Cursor -
 to drive directly. The agent _is_ the interface: it loads a one-page manual and
 operates the CRM over plain HTTP. Headless by design (no UI). Responses are
 grepable plain text by default; JSON on request.
 
 ```bash
-# 1. begin login — a 6-digit code is emailed
+# 1. begin login - a 6-digit code is emailed
 curl -s -X POST https://api.crmkit.ai/auth/request -d '{"email":"you@example.com"}'
 
 # 2. verify the code to get a token
@@ -32,7 +32,7 @@ curl -s -X POST https://api.crmkit.ai/contacts \
   -d '{"name":"Jane Doe","email":"jane@acme.com","stage":"lead"}'
 ```
 
-Plain-text, grepable output — one labeled line per record:
+Plain-text, grepable output - one labeled line per record:
 
 ```
 contact/c_4u8a…  name="Jane Doe"  email=jane@acme.com  stage=lead  updated=2026-06-04
@@ -41,12 +41,12 @@ contact/c_4u8a…  name="Jane Doe"  email=jane@acme.com  stage=lead  updated=202
 
 ### Why crmkit
 
-- **No UI to build or maintain** — the agent is the front end.
-- **Plain text first** — token-cheap, grepable, JSON on `Accept`.
-- **Instructive errors** — every failure tells the agent what to do next.
-- **OTP auth, bearer tokens** — email a code, paste it, get a token.
-- **Single static Go binary** — `CGO_ENABLED=0`, SQLite embedded, deploy as one file.
-- **Extensible** — every record carries a free-form `custom` object.
+- **No UI to build or maintain** - the agent is the front end.
+- **Plain text first** - token-cheap, grepable, JSON on `Accept`.
+- **Instructive errors** - every failure tells the agent what to do next.
+- **OTP auth, bearer tokens** - email a code, paste it, get a token.
+- **Single static Go binary** - `CGO_ENABLED=0`, SQLite embedded, deploy as one file.
+- **Extensible** - every record carries a free-form `custom` object.
 
 ### Repositories
 
