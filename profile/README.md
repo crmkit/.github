@@ -48,6 +48,25 @@ contact/c_4u8a…  name="Jane Doe"  email=jane@acme.com  stage=lead  updated=202
 - **Single static Go binary** - `CGO_ENABLED=0`, SQLite embedded, deploy as one file.
 - **Extensible** - every record carries a free-form `custom` object.
 
+### Skills
+
+Drop-in [agent skills](https://github.com/crmkit/skills) — connect, digest,
+import, backup, inbox-sync. Install the set with one command (Claude Code, Cursor,
+and 40+ agents via [`npx skills`](https://github.com/vercel-labs/skills)):
+
+```bash
+npx skills add crmkit/skills
+```
+
+Or download the release zip and unzip into your skills directory:
+
+```bash
+curl -fsSL https://github.com/crmkit/skills/releases/latest/download/crmkit-skills.zip -o /tmp/crmkit-skills.zip \
+  && unzip -o /tmp/crmkit-skills.zip -d ~/.claude/skills/
+```
+
+Then run `crmkit-connect` first.
+
 ### Repositories
 
 | Repo                                       | Description                              |
