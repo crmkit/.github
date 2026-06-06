@@ -50,8 +50,10 @@ contact/c_4u8a…  name="Jane Doe"  email=jane@acme.com  stage=lead  updated=202
 
 ### Skills
 
-Drop-in [agent skills](https://github.com/crmkit/skills) — connect, digest,
-import, backup, inbox-sync. Install the set with one command (Claude Code, Cursor,
+Drop-in [agent skills](https://github.com/crmkit/skills) - digest, import,
+backup, inbox-sync - for coding agents (on ChatGPT/Claude.ai, add the MCP
+connector at `https://api.crmkit.ai/mcp` instead). Install the set with one
+command (Claude Code, Cursor,
 and 40+ agents via [`npx skills`](https://github.com/vercel-labs/skills)):
 
 ```bash
@@ -65,7 +67,7 @@ curl -fsSL https://github.com/crmkit/skills/releases/latest/download/crmkit-skil
   && unzip -o /tmp/crmkit-skills.zip -d ~/.claude/skills/
 ```
 
-Then run `crmkit-connect` first.
+Each recipe needs `CRMKIT_BASE_URL` and a crmkit token (`POST /auth/request` → `/auth/verify`).
 
 ### Repositories
 
