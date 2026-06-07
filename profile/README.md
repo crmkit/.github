@@ -79,6 +79,10 @@ opportunities, and follow-up work in one shared system:
 - **Fundraising** - manage investors, intros, conversations, diligence status,
   commitments, and follow-up tasks across a raise.
 
+**Example:** ChatBotKit's [AI Market Bot](https://chatbotkit.com/examples/ai-market-bot)
+- a market-research and competitive-intelligence agent - is the market-monitoring
+use case above, made real.
+
 ### What you get
 
 - **No UI to build or maintain** - the agent is the front end.
