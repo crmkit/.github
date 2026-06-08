@@ -19,6 +19,13 @@ to drive directly. The agent _is_ the interface: it loads a one-page manual and
 operates the CRM over plain HTTP. Headless by design (no UI). Responses are
 grepable plain text by default; JSON on request.
 
+**Fastest way in** - paste this into Claude, Claude Code, or any agent that can
+fetch a URL, and it sets itself up:
+
+> Read https://api.crmkit.ai/start and follow it to get me set up with crmkit.
+
+Prefer raw HTTP? Drive it directly:
+
 ```bash
 # 1. begin login - a 6-digit code is emailed
 curl -s -X POST https://api.crmkit.ai/auth/request -d '{"email":"you@example.com"}'
@@ -35,7 +42,7 @@ curl -s -X POST https://api.crmkit.ai/contacts \
 Plain-text, grepable output - one labeled line per record:
 
 ```
-contact/c_4u8a…  name="Jane Doe"  email=jane@acme.com  stage=lead  updated=2026-06-04
+contact_k7m2q  name="Jane Doe"  email=jane@acme.com  stage=lead  updated=2026-06-04T09:13Z
 # 1 contact(s)
 ```
 
