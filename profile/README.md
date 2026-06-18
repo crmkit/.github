@@ -85,6 +85,9 @@ opportunities, and follow-up work in one shared system:
   time.
 - **Fundraising** - manage investors, intros, conversations, diligence status,
   commitments, and follow-up tasks across a raise.
+- **Events & conferences** - track the conferences, trade shows, and webinars you
+  work, the contacts and companies you meet at each, and the follow-up tasks and
+  deals that come out of them.
 
 **Example:** ChatBotKit's [AI Market Bot](https://chatbotkit.com/examples/ai-market-bot)
 - a market-research and competitive-intelligence agent - is the market-monitoring
@@ -126,3 +129,7 @@ Each recipe needs `CRMKIT_BASE_URL` and a crmkit token (`POST /auth/request` →
 | ------------------------------------------ | ---------------------------------------- |
 | [crmkit](https://github.com/crmkit/crmkit) | Server (crmkitd), CLI, and documentation |
 | [skills](https://github.com/crmkit/skills) | Agent skill definitions                  |
+
+### Related
+
+- [zot](https://github.com/openzot/openzot) - an autonomous coding agent you don't babysit.
